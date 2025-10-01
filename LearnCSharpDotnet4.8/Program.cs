@@ -1,0 +1,166 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System . Runtime . CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LearnCSharpDotnet4._8
+{
+	internal class Program
+	{
+		static void Main(string[] args)
+		{
+
+                  #region Name
+
+                  #endregion
+
+                  #region Name
+
+                  #endregion
+
+                  #region Print Odd Numbers from 1 to 99
+                  //int num = 0;
+
+                  //for( int n =1 ; n < 100 ; n ++  )
+                  //{
+                  //      if ( n % 2 != 0 )
+                  //      {
+                  //            Console . WriteLine (n);
+                  //      }
+                  //}
+                  #endregion
+
+                  #region Find Longest Word in String
+                  //string line = "Write a C# Sharp Program to display the following pattern using the alphabet." ;
+                  //var result = FindLongesWord(line);
+                  //Console . WriteLine ("Input Line: " + line );
+                  //Console . WriteLine ("Longest word: " + result);
+
+                  //string FindLongesWord( string input)
+                  //{
+                  //      string [ ] words = input.Split( new [] {' ', '\t', '\n', '\r'}, StringSplitOptions.RemoveEmptyEntries);
+
+                  //      string longestWord = "";
+
+                  //      foreach( string word in words )
+                  //      {
+                  //            if ( word.Length > longestWord . Length )
+                  //            {
+                  //                  longestWord = word;
+                  //            }
+                  //      }
+
+                  //      return longestWord;
+                  //}
+                  #endregion
+
+                  #region Add 1st Char to Front & Back
+                  //string sample = "The quick brown fox jumps over the lazy dog.";
+                  //var s = sample . Substring ( 0 , 1 );
+                  //Console . WriteLine ( s+ sample + s  );
+                  #endregion
+
+                  #region C to K or F
+                  //Console . Write("Enter the amount of celsius: " );
+                  //int Tc = int.Parse(Console.ReadLine());
+
+                  //int Tk = Tc + 273;
+                  //int Tf = Tc * 18/10 + 32;
+
+                  //Console.WriteLine("Kelvin {0}", Tk);
+                  //Console.WriteLine("Fehrenheit {0}", Tf);
+
+                  #endregion
+
+                  #region Swap first and last characters
+                  //string data1 = "w3resource";
+                  //string data2 = "Python";
+                  //string data3 = "to";
+
+                  //Console . WriteLine (SwapChar(data1));
+                  //Console . WriteLine (SwapChar(data2));
+                  //Console . WriteLine (SwapChar(data3));
+
+                  //string SwapChar ( string inputString)
+                  //{
+                  //      string l = inputString.Substring(inputString.Length - 1);
+                  //      string f = inputString.Substring(0, 1);
+                  //      string m = inputString.Substring(1, inputString.Length -2);
+                  //      //if ( inputString . Length > 1 )
+                  //      //{
+                  //      //      return $"{f}{m}{n}"; 
+                  //      //}
+                  //      //else 
+                  //      //{
+                  //      //      return inputString;
+                  //      //}
+                  //      string swappedString = l + f + m;
+
+                  //      //ternary operator
+                  //      return inputString . Length > 1 ? swappedString : inputString;
+                  //}
+                  #endregion
+
+                  #region Multiply Three Numbers
+                  //int n1, n2, n3;
+
+                  //Console . Write ("Input the first number to multiply: ");
+                  //n1 = int . Parse ( Console . ReadLine ( ) );
+                  //Console . Write ( "Input the second number to multiply: " );
+                  //n2 = int . Parse ( Console . ReadLine ( ) );
+                  //Console . Write ( "Input the third number to multiply: " );
+                  //n3 = int . Parse ( Console . ReadLine ( ) );
+
+                  //int result = n1 * n2 * n3;
+
+                  //Console . WriteLine ($"{n1} x {n2} x {n3} = {result} " );
+                  //Console . WriteLine ( "Output: {0} x {1} x {2} = {3}", n1, n2, n3, result);
+
+                  #endregion
+
+                  #region Remove Character by Index
+                  //string  testData = "w3resource";
+
+                  // string remove_char(string str, int n )
+                  //{
+                  //      return str . Remove ( n , 1 );
+                  //}
+
+                  //Console . WriteLine ("Output: " + remove_char(testData, 2) );
+
+                  #endregion
+
+                  #region Swap numbers 
+                  //int num1, num2, temp;
+
+                  //               Console . WriteLine ("Enter first number: " );
+                  //num1 = int.Parse(Console.ReadLine ());
+
+                  //               Console . WriteLine ("Enter second number: " );
+                  //               num2 = int . Parse ( Console . ReadLine ( ) );
+
+                  //               Console . WriteLine ( " ==== Before swapping number ====" );
+                  //               Console . WriteLine ( $"First number: {num1} \n Second number: {num2}" );
+
+                  //               temp = num1;
+                  //num1 = num2;
+                  //num2 = temp;
+
+                  //               Console . WriteLine (" ==== After swapping number ====" );
+                  //               Console . WriteLine ($"First number: {num1} \n Second number: {num2}" );
+                  #endregion
+
+                  Console . ReadKey ( );
+
+
+
+		}	
+
+
+
+    }
+}
+
+
