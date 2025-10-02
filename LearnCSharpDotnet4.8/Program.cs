@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System . IO;
 using System.Linq;
 using System . Runtime . CompilerServices;
 using System.Text;
@@ -13,7 +14,74 @@ namespace LearnCSharpDotnet4._8
 		{
 
                   #region Name
-                  //Test 2
+
+                  #endregion
+
+                  #region File Size
+                  //FileInfo f = new FileInfo("C:/wifiServiceLog.txt");
+
+                  //string fileSize = f.Length.ToString();
+
+                  //Console . WriteLine ("File size: " + fileSize);
+
+                  string projectDir = Directory.GetCurrentDirectory();
+
+                  string solutionDir = Directory.GetParent(projectDir).Parent.FullName;
+
+                  string filePath = Path.Combine(solutionDir, "files","abc.txt");
+
+                  FileInfo fileInfo = new FileInfo(filePath);
+
+                  long fileSize = fileInfo.Length;
+
+                  Console . WriteLine ($"The size of the file is:  { GetFileSize(fileSize)}" );
+
+                  string GetFileSize ( long sizeInBytes )
+                  {
+                        if( sizeInBytes <= 1024 )
+                        {
+                              return $"{sizeInBytes} bytes";
+                        }
+                        else if (sizeInBytes <= 1024 * 1024 )
+                        {
+                              double sizeInKB = sizeInBytes / 1024.0;
+                              return $"{sizeInKB:F2} KB";
+                        }
+                        else if ( sizeInBytes <= 1024 * 1024 * 1024 )
+                        {
+                              double sizeInMB = sizeInBytes /1024 * 1024 * 1024;
+                              return $"{sizeInMB:F2} MB";
+                        }
+                        else
+                        {
+                              double sizzeInGB = sizeInBytes / Math.Pow(1024, 4);
+                              return $"{sizzeInGB:F2} GB";
+
+                        }
+                  }
+
+
+
+                  #endregion
+
+                  #region Reverse Words in Sentence
+                  //string line = "Display the pattern like pyramid using the alphabet.";
+
+                  //StringBuilder result = new StringBuilder();
+
+                  //List<string> wordList = new List<string>();
+
+                  //string [ ] words = line.Split(new [] {" ", "\n", "\b"} , StringSplitOptions.None);
+
+                  //for ( int i = words.Length - 1 ; i >= 0 ; i-- )
+                  //{
+                  //      //result += words [ i ] + " ";
+                  //      result . Append ( words [i] + " ");
+                  //}
+
+                  //Console . WriteLine ("\nReverse String: " + result.ToString().Trim());
+
+
                   #endregion
 
                   #region Sum of digits of an integer number
@@ -50,7 +118,7 @@ namespace LearnCSharpDotnet4._8
 
 
 
-                        #endregion
+                  #endregion
 
                   #region Sum of Prime numbers till 500
                   //bool IsPrime ( int number )
@@ -215,7 +283,7 @@ namespace LearnCSharpDotnet4._8
                   //               Console . WriteLine ($"First number: {num1} \n Second number: {num2}" );
                   #endregion
 
-                        Console . ReadKey ( );
+                  Console . ReadKey ( );
 
 
 
