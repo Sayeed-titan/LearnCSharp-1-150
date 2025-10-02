@@ -13,7 +13,7 @@ namespace LearnCSharpDotnet4._8
 		{
 
                   #region Name
-                  //Test
+                  //Test 2
                   #endregion
 
                   #region Sum of digits of an integer number
