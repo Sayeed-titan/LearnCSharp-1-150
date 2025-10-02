@@ -16,7 +16,34 @@ namespace LearnCSharpDotnet4._8
 
                   #endregion
 
-                  #region Name
+                  #region Sum of Prime numbers till 500
+                  //bool IsPrime(int number )
+                  //{
+                  //      if ( number <= 1 ) return false;
+
+                  //      for ( int i = 2 ; i <= Math.Sqrt ( number ) ; i++ )
+                  //      {
+                  //            if ( number % i == 0 ) return false;
+                  //      }
+
+                  //      return true;
+                  //}
+
+                  //int count = 0;
+                  //long sum = 0;
+                  //int num = 2;
+
+                  //while ( count < 500 )
+                  //{
+                  //      if ( IsPrime ( num ) )
+                  //      {
+                  //            sum += num;
+                  //            count++;
+                  //      }
+                  //      num++;
+                  //}
+
+                  //Console . WriteLine ("Sum: " + sum);
 
                   #endregion
 
