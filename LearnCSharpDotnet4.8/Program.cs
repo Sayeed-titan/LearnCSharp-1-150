@@ -17,48 +17,93 @@ namespace LearnCSharpDotnet4._8
 
                   #endregion
 
-                  #region File Size
+
+                  #region Binary to Decimal
+
+                  //Console . Write ("Enter a binary number: ");
+                  //string binaryInput = Console.ReadLine ();
+
+                  //try
+                  //{
+                  //      int decimalValue = Convert.ToInt32(binaryInput, 2);
+
+                  //      Console . WriteLine ($"The binary number {binaryInput} converted into decimal number : {decimalValue}");
+                  //}
+                  //catch ( FormatException )
+                  //{
+                  //      Console . WriteLine ("Invalid input");
+                  //}
+
+
+                  #endregion
+
+                  #region convert Hex to Dec
+                  //string hexValue = "4B0";
+
+                  //Console . WriteLine ( "Hexadecimal number: " + hexValue );
+
+                  //int decValue = int.Parse(hexValue, System.Globalization.NumberStyles.HexNumber);
+
+                  //Console . WriteLine ( "Decimal Numeber: " + decValue );
+
+                  //Console . Write ("Enter a hexadecimal number: ");
+                  //string hexInput = Console.ReadLine ();
+
+                  //try
+                  //{
+                  //      int decimalValue = Convert.ToInt32(hexInput, 16);
+
+                  //      Console . WriteLine ($"The decimal after converting from hexadecimal {hexInput} is {decimalValue}");
+                  //}
+                  //catch ( FormatException )
+                  //{
+                  //      Console . WriteLine ("Invalid hexadecimal number entered.");
+                  //}
+
+                  #endregion
+
+                  #region Get File Size
                   //FileInfo f = new FileInfo("C:/wifiServiceLog.txt");
 
                   //string fileSize = f.Length.ToString();
 
                   //Console . WriteLine ("File size: " + fileSize);
 
-                  string projectDir = Directory.GetCurrentDirectory();
+                  //string projectDir = Directory.GetCurrentDirectory();
 
-                  string solutionDir = Directory.GetParent(projectDir).Parent.FullName;
+                  //string solutionDir = Directory.GetParent(projectDir).Parent.FullName;
 
-                  string filePath = Path.Combine(solutionDir, "files","abc.txt");
+                  //string filePath = Path.Combine(solutionDir, "files","abc.txt");
 
-                  FileInfo fileInfo = new FileInfo(filePath);
+                  //FileInfo fileInfo = new FileInfo(filePath);
 
-                  long fileSize = fileInfo.Length;
+                  //long fileSize = fileInfo.Length;
 
-                  Console . WriteLine ($"The size of the file is:  { GetFileSize(fileSize)}" );
+                  //Console . WriteLine ($"The size of the file is:  { GetFileSize(fileSize)}" );
 
-                  string GetFileSize ( long sizeInBytes )
-                  {
-                        if( sizeInBytes <= 1024 )
-                        {
-                              return $"{sizeInBytes} bytes";
-                        }
-                        else if (sizeInBytes <= 1024 * 1024 )
-                        {
-                              double sizeInKB = sizeInBytes / 1024.0;
-                              return $"{sizeInKB:F2} KB";
-                        }
-                        else if ( sizeInBytes <= 1024 * 1024 * 1024 )
-                        {
-                              double sizeInMB = sizeInBytes /1024 * 1024 * 1024;
-                              return $"{sizeInMB:F2} MB";
-                        }
-                        else
-                        {
-                              double sizzeInGB = sizeInBytes / Math.Pow(1024, 4);
-                              return $"{sizzeInGB:F2} GB";
+                  //string GetFileSize ( long sizeInBytes )
+                  //{
+                  //      if( sizeInBytes <= 1024 )
+                  //      {
+                  //            return $"{sizeInBytes} bytes";
+                  //      }
+                  //      else if (sizeInBytes <= 1024 * 1024 )
+                  //      {
+                  //            double sizeInKB = sizeInBytes / 1024.0;
+                  //            return $"{sizeInKB:F2} KB";
+                  //      }
+                  //      else if ( sizeInBytes <= 1024 * 1024 * 1024 )
+                  //      {
+                  //            double sizeInMB = sizeInBytes /1024 * 1024 * 1024;
+                  //            return $"{sizeInMB:F2} MB";
+                  //      }
+                  //      else
+                  //      {
+                  //            double sizzeInGB = sizeInBytes / Math.Pow(1024, 4);
+                  //            return $"{sizzeInGB:F2} GB";
 
-                        }
-                  }
+                  //      }
+                  //}
 
 
 
