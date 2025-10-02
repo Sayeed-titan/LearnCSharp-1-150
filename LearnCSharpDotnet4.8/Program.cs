@@ -17,6 +17,49 @@ namespace LearnCSharpDotnet4._8
 
                   #endregion
 
+                  #region Multiply two arrays
+                  //// Declare and initialize the first array with integer values
+                  //int[] first_array = {1, 3, -5, 4};
+
+                  //// Declare and initialize the second array with integer values
+                  //int[] second_array = {1, 4, -5, -2};
+
+                  //// Display a message indicating multiplication of corresponding elements of both arrays
+                  //Console . WriteLine ( "\nMultiply corresponding elements of two arrays: " );
+
+                  //// Loop through the arrays to multiply corresponding elements and display the results
+                  //for ( int i = 0 ; i < first_array . Length ; i++ )
+                  //{
+                  //      // Multiply the elements at index 'i' of both arrays and display the result
+                  //      Console . Write ( first_array [ i ] * second_array [ i ] + " " );
+                  //}
+
+                  //int [ ] array1 = { 1, 2, 3 };
+                  //int [ ] array2 = { 4, 5, 6 };
+
+                  //if (array1.Length != array2 . Length )
+                  //{
+                  //      Console . WriteLine ("The arrays must have the same length.");
+                  //      return;
+                  //}
+
+                  //int [ ] result = new int [ array1.Length ];
+
+                  //for ( int i = 0 ; i <result.Length ; i++ )
+                  //{
+                  //      result [ i ] = array1 [ i ] * array2 [ i ];
+                  //}
+
+                  //Console . WriteLine ("Result: ");
+
+                  //foreach (var item in result )
+                  //{
+                  //      Console . Write ( item + " " );
+                  //}
+
+
+                  #endregion
+
 
                   #region Binary to Decimal
 
